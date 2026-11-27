@@ -23,19 +23,6 @@ const Layout = () => {
 
   return (
     <div className="min-h-screen relative overflow-x-hidden">
-        {/* Logo - Top Left */}
-      <Link
-        to="/"
-        className="fixed top-4 left-4 z-50 flex items-center"
-        onClick={closeMenu}
-      >
-        <img
-          src="/logo.png"
-          alt="Avneet Saggu Logo"
-          className="h-12 md:h-16 w-auto object-contain"
-        />
-      </Link>
-
       {/* Persistent Top-Corner Navigation */}
       <div className="fixed top-4 right-4 z-50">
         <button 
