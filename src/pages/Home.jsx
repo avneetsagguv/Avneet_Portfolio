@@ -100,7 +100,7 @@ const Home = () => {
         className="absolute z-20 pointer-events-none"
         style={{ left: '5%', top: '6%', transform: 'rotate(-1.5deg)' }}
       >
-        <div className="bg-white border-4 md:border-[5px] border-deep-maroon p-6 md:p-8 shadow-[8px_8px_0_0_#2F5FCB] inline-block pointer-events-auto rounded-2xl md:rounded-3xl max-w-[280px] md:max-w-md">
+        <div className="bg-white border-4 md:border-[5px] border-deep-maroon p-6 md:p-8 shadow-[8px_8px_0_0_#2F5FCB] inline-block pointer-events-auto rounded-2xl md:rounded-3xl max-w-[280px] md:max-w-md ml-12 mt-24">
           <h1 className="text-3xl md:text-5xl text-deep-maroon leading-tight font-press-start tracking-wider">
             Avneet<br />Saggu
           </h1>
