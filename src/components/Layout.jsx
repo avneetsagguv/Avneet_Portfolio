@@ -30,7 +30,7 @@ const Layout = () => {
         onClick={closeMenu}
       >
         <img
-          src="/logo.png"
+          src="/logo.jpeg"
           alt="Avneet Saggu Logo"
           className="h-12 md:h-16 w-auto object-contain"
         />
