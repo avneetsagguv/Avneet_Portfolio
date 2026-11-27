@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Press+Start+2P&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-inter bg-bg-cream text-deep-maroon min-h-screen m-0 p-0 overflow-x-hidden;
+    /* Dotted background pattern for a board game feel */
+    background-image: radial-gradient(#d1cbb8 2px, transparent 2px);
+    background-size: 30px 30px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-press-start;
+  }
+}
+
+@layer components {
+  .retro-btn {
+    @apply font-press-start bg-primary-magenta text-white px-6 py-3 border-4 border-deep-maroon
+           shadow-[4px_4px_0_0_#7A1224] transition-all active:translate-y-[4px] active:translate-x-[4px] active:shadow-none hover:bg-accent-mint hover:text-deep-maroon inline-block;
+  }
+  .retro-panel {
+    @apply border-4 border-deep-maroon bg-white p-6 shadow-[8px_8px_0_0_#2F5FCB];
+  }
+  .retro-input {
+    @apply border-4 border-deep-maroon p-3 font-inter focus:outline-none focus:border-primary-magenta shadow-[4px_4px_0_0_#7A1224];
+  }
+  
+  /* Board game specific styles */
+  .game-track-path {
+    @apply bg-[#435B71] border-[6px] border-deep-maroon; /* Inspired by the image's dark blue track */
+  }
+
+  .game-tile {
+    @apply font-press-start border-4 border-deep-maroon bg-white
+           transition-transform active:scale-95 cursor-pointer
+           flex flex-col items-center justify-center relative shadow-sm;
+  }
+  
+  .game-pawn {
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+  }
+}
